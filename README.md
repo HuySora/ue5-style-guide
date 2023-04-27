@@ -860,9 +860,9 @@ Example: Use `bIsDead` and `bIsHostile` **not** `bDead` and `bHostile`.
 
 Do not to use booleans to represent complex and/or dependent states. This makes state adding and removing complex and no longer easily readable. Use an enumeration instead.
 
-Example: When defining a weapon, do **not** use `bReloading` and `bEquipping` if a weapon can't be both reloading and equipping. Define an enumeration named `EWeaponState` and use a variable with this type named `WeaponState` instead. This makes it far easier to add new states to weapons.
+Example: When defining a weapon, do **not** use `bIsReloading` and `bIsEquipping` if a weapon can't be both reloading and equipping. Define an enumeration named `EWeaponState` and use a variable with this type named `WeaponState` instead. This makes it far easier to add new states to weapons.
 
-Example: Do **not** use `bRunning` if you also need `bWalking` or `bSprinting`. This should be defined as an enumeration with clearly defined state names.
+Example: Do **not** use `bIsRunning` if you also need `bIsWalking` or `bIsSprinting`. This should be defined as an enumeration with clearly defined state names.
 
 <a name="3.2.1.5"></a>
 <a name="bp-vars-naming-context"></a>
