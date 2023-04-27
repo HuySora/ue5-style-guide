@@ -849,13 +849,11 @@ UE4 Blueprint editors know not to include the `b` in user-friendly displays of t
 ##### 3.2.1.4 Boolean Names
 
 <a name="3.2.1.4.1"></a>
-###### 3.2.1.4.1 General And Independent State Information
+###### 3.2.1.4.1 Prefix
 
-All booleans should be named as descriptive adjectives when possible if representing general information. Do not include words that phrase the variable as a question, such as `Is`. This is reserved for functions.
+All booleans should be named in PascalCase but prefixed with a verb.
 
-Example: Use `bDead` and `bHostile` **not** `bIsDead` and `bIsHostile`.
-
-Try to not use verbs such as `bRunning`. Verbs tend to lead to complex states.
+Example: Use `bIsDead` and `bIsHostile` **not** `bDead` and `bHostile`.
 
 <a name="3.2.1.4.2"></a>
 ###### 3.2.1.4.2 Complex States
